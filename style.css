@@ -69,6 +69,11 @@ a {
   z-index: 1;
 }
 
+.get-started:hover {
+  cursor: pointer;
+  background-color: var(--non-sat-blue);
+}
+
 .get-started h4 {
   color: white;
 }
@@ -186,6 +191,21 @@ main {
   background-image: var(--blue-to-pink-grad);
 }
 
+.get-started:hover {
+  cursor: pointer;
+  background-color: var(--non-sat-blue);
+}
+
+.header .get-started:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, hsl(13, 100%, 74%),  hsl(322, 87%, 65%));
+}
+
+.bottom-nav .get-started:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, hsl(237, 100%, 74%),  hsl(322, 87%, 65%));
+}
+
 @media only screen and (max-width:1250px){
   .top-nav, .header, main, .top-nav, .bottom-nav {
     padding: 0 4vw;
@@ -232,10 +252,56 @@ main {
     height: auto;
   }
 
-
-
+  .bottom-nav {
+    margin-top: 5.375rem;
+  }
 }
 
+@media screen and (max-width:375px) {
+  .container {
+    min-width: 375px;
+    .top-nav .get-started, .bottom-nav .get-started {
+      padding: 0.75rem 1.5rem;
+    }
+    
+    .header {
+      display: block;
+      height: auto;
+      margin-top: 1.375rem;
+    }
+    
+    .max-skill, .hero-img {
+      width: 100%;
+      margin: 0;
+    }
+    
+    .hero-img img {
+      width: 100%;
+      content: url(./assets/image-hero-mobile@2x.png);
+      bottom: 0;
+      right: 0;
+      margin-top: 1.875rem;
+    }
+    
+    .orange-pink {
+      height: 7.5rem;
+    }
+    
+    .orange-pink h2 {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .card img {
+      margin-top: 0;
+    }
+    
+    .bottom-nav {
+      margin-top: 5rem;
+    }
+    
+  }  
+}
 
 
 
